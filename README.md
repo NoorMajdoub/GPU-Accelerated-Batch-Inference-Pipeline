@@ -2,4 +2,4 @@
 
 RAPIDS cuDF, Dask, NVIDIA Triton, and Airflow for high-performance offline inference workflows.
 Focus : MLOps 
-optimized batch processing for large datasets
+optimized batch processing for large datasets ==initial goal
