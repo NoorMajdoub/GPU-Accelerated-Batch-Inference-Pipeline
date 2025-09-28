@@ -34,7 +34,9 @@ The goal is to set a solid foundation for a fully optimized batch inference pipe
 * [NVIDIA Triton Inference Server](https://developer.nvidia.com/nvidia-triton-inference-server) – scalable inference
 * [Triton Python client](https://github.com/triton-inference-server/client) – send batch requests to Triton
 * [Docker](https://www.docker.com/) – containerization
-
+  
+  PS : for the dataset I worked initially with
+  https://www.kaggle.com/datasets/iamsouravbanerjee/airline-dataset
 ---
 
 ## 📂 Project Structure
