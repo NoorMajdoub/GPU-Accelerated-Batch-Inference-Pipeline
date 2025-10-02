@@ -14,15 +14,15 @@ The goal is to set a solid foundation for a fully optimized batch inference pipe
 * **Model training & export**
   Train an XGBoost model on GPU and export it in a Triton-compatible format.
 
-* **Model serving with NVIDIA Triton**
+* **Model serving with NVIDIA Triton** (it works then decide not to work)
   Deploy the trained model with Triton for scalable inference.
 
 * **Batch inference pipeline**
-  Process millions of rows in batches, send requests to Triton, and collect predictions.
+  Process rows in batches, send requests to Triton, and collect predictions.
 
-* **MLOps-ready workflow**
+* **MLOps-ready workflow**  (Future work: add model monitoring with Grafana and Prometheus).
+
   Containerized, reproducible, and scalable to multi-GPU / multi-node environments.
-  (Future work: add model monitoring with Grafana and Prometheus).
 
 ---
 
@@ -42,14 +42,13 @@ The goal is to set a solid foundation for a fully optimized batch inference pipe
 ## 📂 Project Structure
 
 ```
-├── datapreprocessing/
+├── rapidspreprocessing/
 │   └── preprocess.py       # Preprocessing with RAPIDS
 ├── model_training/
 │   ├── model.py            # Model training
-│   └── inference.py        # Batch inference pipeline (RAPIDS + Triton client)
-├── triton_model_repo/      # Model repository for Triton
-├── docker-compose.yml      # Triton + pipeline setup
-└── README.md               # Project documentation
+│   └── inference.py       
+├── triton_model_repo/      # (to add)  
+└── README.md               
 ```
 
 ---
